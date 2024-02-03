@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C语言总结</title>
+    <link rel="stylesheet" href="../css/c.css">
+</head>
+<body>
+    <div style="position: fixed; top: 0;">
+        <h1>C语言总结</h1>
+    </div>
+    
+    <section id="cSummary">
+        <h2>概述</h2>
+        <p>C语言是一种强大而高效的编程语言，广泛应用于系统级编程、嵌入式系统和性能要求较高的应用程序开发。</p>
+    </section>
+    
+    <section id="cFeatures" style="margin-top: 5px;">
+        <h2>主要特性</h2>
+        <ul>
+            <li><h4 style="margin: 0; padding: auto;">基本语法：</h4>
+            <p style="margin: 0; padding: auto;">C语言有简洁而直接的语法，适合学习编程的初学者。
+            主要包括变量、数据类型、运算符、控制语句（if、else、while、for）等基本概念。</p></li>
+            <li><h4 style="margin: 0; padding: auto;">数据类型和变量：</h4>
+            <p style="margin: 0; padding: auto;">C语言提供了基本数据类型（整数、浮点数、字符等）和用户自定义的复合数据类型。
+            使用 int、float、char 等关键字声明变量，存储不同类型的数据。</p></li>
+            <li><h4 style="margin: 0; padding: auto;">输入和输出：</h4>
+            <p style="margin: 0; padding: auto;"> 使用 printf 函数进行输出，使用 scanf 函数进行输入。
+            %d、%f、%c 等格式化符号用于指定输出和输入的数据类型。</p>   </li>
+            <li>
+                <h4 style="margin: 0; padding: auto;">运算符：</h4>
+                <p style="margin: 0; padding: auto;">包括算术运算符（+、-、*、/）、关系运算符（==、!=、<、>）、逻辑运算符（&&、||、!）等。</p>
+            </li>
+            <li>
+                <h4 style="margin: 0; padding: auto;">控制语句：</h4>
+                <p style="margin: 0; padding: auto;">if、else 用于条件判断，while、for 用于循环控制。</p>
+            </li>
+            <li>
+                <h4 style="margin: 0; padding: auto;">数组：</h4>
+                <p style="margin: 0; padding: auto;">数组是一组相同类型的元素的集合。
+                通过下标访问数组元素，数组下标从0开始。</p>
+            </li>
+            <li>
+                <h4 style="margin: 0; padding: auto;">指针：</h4>
+                <p style="margin: 0; padding: auto;">指针存储变量的内存地址。
+                通过 & 取地址运算符获取地址，通过 * 解引用运算符访问指针指向的值。</p>
+            </li>
+            <li>
+                <h4 style="margin: 0; padding: auto;">字符串：</h4>
+                <p style="margin: 0; padding: auto;">字符串是字符数组，以null字符 \0 结尾。
+                使用字符数组表示字符串，也可以使用字符串库函数如 strlen、strcpy、strcat 等进行字符串操作。</p>
+            </li>
+            <li>
+                <h4 style="margin: 0; padding: auto;">函数：</h4>
+                <p style="margin: 0; padding: auto;">函数是程序的模块化单元，有助于提高代码的可读性和可维护性。
+                包括函数的声明、定义、调用、参数传递等概念。</p>
+            </li>
+            <li>
+                <h4 style="margin: 0; padding: auto;">结构体和联合体：：</h4>
+                <p style="margin: 0; padding: auto;">结构体用于组织不同类型的数据成员，联合体用于共享内存空间。
+                提高代码的灵活性，支持自定义数据结构。</p>
+            </li>
+            <li>
+                <h4 style="margin: 0; padding: auto;">文件读写操作：</h4>
+                <p style="margin: 0; padding: auto;">使用 FILE 结构和相关函数进行文件的读写操作。
+                包括 fopen、fclose、fread、fwrite 等函数。</p>
+            </li>
+            <li>
+                <h4 style="margin: 0; padding: auto;">动态内存分配：</h4>
+                <p style="margin: 0; padding: auto;">使用 malloc、calloc、realloc、free 等函数进行动态内存的分配和释放。</p>
+            </li>
+        </ul>
+    </section>
+
+    <div id="output"></div>
+    <textarea id="code">#include <stdio.h>
+        int main()
+        {
+        // printf() 中字符串需要引号
+        printf("Hello, World!");
+        return 0;
+        }</textarea>
+    
+    
+    <section id="cUseCases" style="margin-top: 5px;">
+        <h2>应用场景</h2>
+        <p>C语言在操作系统、嵌入式系统、编译器开发等领域有着广泛的应用。其性能和直接硬件访问的能力使其成为系统级编程的首选语言。</p>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2024 C语言爱好者</p>
+    </footer>
+    
+    
+</body>
+</html>

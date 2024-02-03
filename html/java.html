@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../css/java.css">
+<body>
+    <header>
+        <h1>Java 学习总结</h1>
+    </header>
+    
+    <section>
+        <h2>基本概念</h2>
+        <p>Java 是一种面向对象的编程语言，具有强大的跨平台特性。学习 Java 的第一步是了解基本语法和概念。</p>
+    </section>
+    
+    <section>
+        <h2>核心特性</h2>
+        <p>Java 的核心特性包括面向对象、跨平台性、垃圾回收、异常处理等。这些特性使其成为广泛应用于企业级应用和移动应用开发的强大语言。</p>
+    </section>
+    
+    <section>
+        <h2>Java 编程环境</h2>
+        <p>学习 Java 还需要了解如何设置和使用 Java 编程环境，包括 JDK、IDE（例如Eclipse、IntelliJ IDEA）等。</p>
+    </section>
+    
+    <section>
+        <h2>面向对象编程</h2>
+        <p>Java 是一种完全支持面向对象编程的语言。理解类、对象、继承、多态等概念对于Java程序设计至关重要。</p>
+    </section>
+    
+    <section>
+        <h2>简单示例</h2>
+        <button onclick="showExample()">显示示例</button>
+        <div id="example" class="hidden">
+            <p>public class HelloWorld {</p>
+            <p>&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello, World!");</p>
+            <p>&nbsp;&nbsp;&nbsp;}</p>
+            <p>}</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Java 学习总结</p>
+    </footer>
+    
+    <script>
+        function showExample() {
+            var exampleDiv = document.getElementById("example");
+            exampleDiv.classList.toggle("hidden");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 64px;
+            text-decoration: none;
+        }
+
+        /* 鼠标移动到选项上修改背景颜色 */
+        li a:hover {
+            background-color: #111;
+        }
+
+        /* 除了最后一个选项(last-child)，其他的都添加分割线 */
+        li {
+            border-right: 1px solid #646161;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        ul {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            /* 确保导航栏显示在其他元素之上 */
+        }
+
+        header {
+            margin-top: 50px;
+            /* 根据设计需要调整上边距，为导航栏腾出空间 */
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a:active {
+            color: pink;
+        }
+
+        @import './google-fonts.css';
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* body {
+  min-height: 100vh;
+  background-color: #222;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+} */
+
+
+        .scroll {
+            display: flex;
+            width: 700px;
+            overflow: hidden;
+            mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+            -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+        }
+
+        .scroll>div span {
+            display: inline-block;
+            margin: 10px;
+            padding: 5px 10px;
+            background-color: #333;
+            border-radius: 5px;
+
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+
+        .scroll>div span:hover {
+            background-color: #4caf50;
+        }
+
+        .img-box img {
+            max-width: 150px;
+            filter: grayscale(1);
+
+            cursor: pointer;
+            transition: filter 0.5s;
+        }
+
+        .img-box img:hover {
+            filter: grayscale(0);
+        }
+
+        /* ... */
+
+
+        .scroll>div {
+            white-space: nowrap;
+            animation: animate var(--t) linear infinite;
+            animation-delay: calc(var(--t) * -1);
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .scroll>div:nth-child(2) {
+            animation: animate2 var(--t) linear infinite;
+            animation-delay: calc(var(--t) / -2);
+        }
+
+        @keyframes animate2 {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-200%);
+            }
+        }
+
+        .scroll:hover>div {
+            animation-play-state: paused;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .scroll {
+                width: 90vw;
+            }
+
+            .scroll>div span {
+                background-color: #4caf50;
+            }
+
+            .img-box img {
+                width: 33vw;
+                filter: grayscale(0);
+            }
+        }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="../css/dataStructure.css">
+</head>
+<body>
+    <header>
+        <h1>数据结构学习总结</h1>
+    </header>
+    
+    <section>
+        <h2>基本概念</h2>
+        <p>数据结构是计算机存储、组织和操作数据的方式。了解基本概念对于设计和实现高效的算法至关重要。</p>
+        <ul>
+            <li>什么是数据结构？</li>
+            <li>常见的数据结构类型，如数组、链表、栈、队列等。</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>数组与链表</h2>
+        <p>数组和链表是最基本的数据结构，了解它们的特点和应用场景对于解决实际问题很有帮助。</p>
+        <ul>
+            <li>数组的特点和使用。</li>
+            <li>链表的特点和使用。</li>
+            <li>数组和链表的比较。</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>栈与队列</h2>
+        <p>栈和队列是基于数组或链表构建的特殊数据结构，常用于解决特定的问题。</p>
+        <ul>
+            <li>栈的特点和应用。</li>
+            <li>队列的特点和应用。</li>
+            <li>栈和队列的比较。</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>树与图</h2>
+        <p>树和图是更复杂的数据结构，广泛应用于各种算法和系统设计中。</p>
+        <ul>
+            <li>树的基本概念，如二叉树、二叉搜索树。</li>
+            <li>图的基本概念，如有向图、无向图。</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>算法与复杂度</h2>
+        <p>了解常见的算法和其复杂度分析有助于选择合适的数据结构和设计高效的程序。</p>
+        <ul>
+            <li>常见排序和搜索算法。</li>
+            <li>时间复杂度和空间复杂度的概念。</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>示例</h2>
+        <button onclick="showExample()">显示示例</button>
+        <div id="example" class="hidden">
+            <p>void bubbleSort(int arr[], int n) {</p>
+            <p>&nbsp;&nbsp;&nbsp;for (int i = 0; i < n-1; i++) {</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int j = 0; j < n-i-1; j++) {</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (arr[j] > arr[j+1]) {</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap(arr[j],
+                                arr[j+1]);</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </p>
+                            <p>&nbsp;&nbsp;&nbsp;} </p>
+                            <p>}</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 数据结构学习总结</p>
+    </footer>
+    
+    <script>
+        function showExample() {
+            var exampleDiv = document.getElementById("example");
+            exampleDiv.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
